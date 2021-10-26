@@ -1,0 +1,10 @@
+Projeto: sistema de validaçao de CPF
+
+Equipe: Beatriz Ferraz e Diogo Uoma
+
+Papéis: Beatriz - gerente de projeto / desenvolvedora
+	Diogo - suporte / desenvolvedor
+
+Linguagem: C
+
+Ferramenta: Dev-C++

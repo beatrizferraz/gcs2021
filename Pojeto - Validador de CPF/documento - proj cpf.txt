@@ -8,3 +8,8 @@ Papéis: Beatriz - gerente de projeto / desenvolvedora
 Linguagem: C
 
 Ferramenta: Dev-C++
+
+---------------------------------------------------------------------------------
+Mudanças: 
+27/10/2021 - Adicionar calculo de INSS de acordo com salario do funcionario
+	     Status: completo	

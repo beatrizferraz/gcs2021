@@ -16,3 +16,6 @@ Mudanças:
 
 27/10/2021 - Adicionar calculo de IR de acordo com salario do funcionario
 	     Status: completo (03/11)
+	     
+03/11/2021 - Corrigir calculo do IR
+	     Status: em andamento

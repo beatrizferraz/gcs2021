@@ -25,33 +25,45 @@ float calculoINSS(float salario){
 }
 
 float calculoIR(float salario) {
-      float resultado;
+      float baseDoCalculo;
+      float imposto;
+      float X;
+      float valorInss = calculoINSS(salario);
       
       if(salario <= 1903.98) {
-         resultado = salario;
+         printf("\nNao e necessario declarar IR.");
+         return 0;
       }
       
       if(salario >= 1903.99 && salario <= 2826.65) {
-         resultado = salario * 0.075;
+         baseDoCalculo = (salario - valorInss);
+         X = baseDoCalculo * 0.075;
+         imposto = X - 142,80;
       }
       
       if(salario >= 2826.66 && salario <= 3751.05) {
-         resultado = salario * 0.15;
+         baseDoCalculo = (salario - valorInss);
+         X = baseDoCalculo * 0.15;
+         imposto = X - 354,80;
       } 
       
       if(salario >= 3751.06 && salario <= 4664.68) { 
-         resultado = salario * 0.225;
+         baseDoCalculo = (salario - valorInss);
+         X = baseDoCalculo *  0.225;
+         imposto = X - 636,13;
       } 
       
       if (salario >= 4664.69) { 
-         resultado = salario * 0.275;
+          baseDoCalculo = (salario - valorInss);
+          X = baseDoCalculo * 0.275;
+          imposto = X - 869,36;
       }     
-      return resultado;
-
+      return imposto;
 }
 
 int main(){
     float salario;
+    float valorInss;
     
     printf("Informe seu salario: ");
     scanf("%f", &salario);
